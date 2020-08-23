@@ -1,0 +1,79 @@
+.hero
+	padding: 50px 0
+	background-color: #f5f5f5
+	&-block
+		display: flex
+		justify-content: space-between
+	&-image
+		margin-right: -40px
+	&-text
+		flex-basis: 50%
+		padding-right: 100px
+		&__title
+			margin-top: 35px
+			margin-bottom: 50px
+			+title(41px, 48px)
+			+bold
+		&__subtitle
+			display: block
+			margin-bottom: 70px
+			+title(20px, 20px)
+			+bold
+	&-list
+		&__item
+			margin-bottom: 25px
+			display: flex
+			align-items: center
+		&__image
+			margin-right: 30px
+			display: flex
+			justify-content: center
+			align-items: center
+			border: 2px solid $main-color
+			width: 40px
+			height: 40px
+			border-radius: 50%
+		&__text
+			max-width: 232px
+			line-height: 22px
+			color: $text-color
+		&__item:last-child
+			margin-bottom: 0
+@media (max-width: 1200px)
+	.hero
+		&-block
+			flex-direction: column
+		&-list
+			margin-bottom: 40px
+		&-image
+			margin-right: 0
+		&-text
+			padding-right: 10px
+			&__title
+				margin-top: 0
+@media (max-width: 768px)
+	.hero
+		&-text
+			&__title
+				margin-bottom: 15px
+			&__subtitle
+				margin-bottom: 30px
+		&-list
+			&__item:not(:last-child)
+				margin-bottom: 20px
+			&__image
+				margin-right: 15px
+@media (max-width: 480px)
+	.hero
+		&-text
+			&__title
+				font-size: 24px
+				line-height: 30px
+			&__subtitle
+				max-width: 200px
+				font-size: 16px
+				line-height: 15px
+		&-list
+			&__text
+				font-size: 12px
+				line-height: 17px
