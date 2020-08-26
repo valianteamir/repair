@@ -24,12 +24,21 @@ img
 		img
 			width: 91px
 .button
-	border-radius: 5px
+	border-radius: 10px
 	background-color: $main-color
 	font-size: 13px
 	font-weight: 700
 	color: $text-color
+	&:hover
+		background-color: lighten($main-color, 15%)
 =title($fz, $lh)
 	font-size: $fz
 	line-height: $lh
 	color: $text-color
+.input
+	padding: 20px 26px
+	border: 1px solid #dddddd
+	border-radius: 10px
+	font-size: 15px
+	color: #999999
+	+reg
