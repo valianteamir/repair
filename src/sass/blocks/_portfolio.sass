@@ -1,0 +1,29 @@
+.portfolio
+	padding: 100px 0
+	background: #f5f5f5 url('../img/portfolio/pattern.jpg') repeat-y center left
+	background-size: 50%
+	&__title
+		margin: 0 auto
+		margin-bottom: 100px
+		max-width: 600px
+		text-align: center
+		+title(30px, 45px)
+		+bold
+	&__slider
+		max-width: 1170px
+		max-height: 570px
+	&__arrows
+		margin: 0 auto
+		max-width: 121px
+		display: flex
+		justify-content: space-between
+	&__wrapper
+		margin-bottom: 10px
+	&__pagination
+		margin-bottom: 28px
+		text-align: center
+.swiper-pagination-bullet-active
+	background-color: #969696
+.arrow
+	&-left, &-right
+		cursor: pointer
