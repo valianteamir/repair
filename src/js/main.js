@@ -14,26 +14,6 @@ closeBtn.addEventListener('click', function() {
 	modal.classList.remove('modal-bg_active');
 });
 
-// const mySwiper = new Swiper('.slider', {
-// 	slidesPerView: 3,
-// 	speed: 500,
-// 	navigation: {
-// 		nextEl: '.arrow-right',
-// 		prevEl: '.arrow-left'
-// 	},
-// 	autoplay: {
-// 		delay: 3000,
-// 	},
-// 	// pagination: {
-// 	// 	el: '.swiper-pagination',
-// 	// 	type: 'bullets',
-// 	// }
-// 	scrollbar: {
-// 		el: '.swiper-scrollbar',
-// 		draggable: true,
-// 	}
-// });
-
 const mySwiper = new Swiper('.portfolio__slider', {
 	slidesPerView: 3,
 	speed: 500,
@@ -41,8 +21,15 @@ const mySwiper = new Swiper('.portfolio__slider', {
 		nextEl: '.arrow-right',
 		prevEl: '.arrow-left'
 	},
+	autoplay: {
+		delay: 3000,
+	},
 	pagination: {
 		el: '.portfolio__pagination',
-		clickable: 'true'
-	}
+		type: 'fraction',
+	},
+	scrollbar: {
+		el: '.portfolio__scrollbar',
+		draggable: true,
+	},
 });

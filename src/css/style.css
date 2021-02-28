@@ -180,6 +180,7 @@ img {
   text-align: center;
   font-family: "MuseoSans Bold", sans-serif;
   font-weight: 700;
+  text-align: left;
 }
 
 .hero-text__subtitle {
@@ -191,6 +192,7 @@ img {
   text-align: center;
   font-family: "MuseoSans Bold", sans-serif;
   font-weight: 700;
+  text-align: left;
 }
 
 .hero-list__item {
@@ -511,17 +513,27 @@ img {
           justify-content: space-between;
 }
 
-.portfolio__wrapper {
-  margin-bottom: 10px;
-}
-
 .portfolio__pagination {
-  margin-bottom: 28px;
+  margin-bottom: 18px;
   text-align: center;
 }
 
-.swiper-pagination-bullet-active {
+.swiper-scrollbar {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.swiper-scrollbar-drag {
+  position: static;
   background-color: #969696;
+}
+
+.swiper-pagination-fraction {
+  font-size: 18px;
+}
+
+.swiper-container-horizontal .swiper-scrollbar {
+  position: static;
 }
 
 .arrow-left, .arrow-right {

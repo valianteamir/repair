@@ -17,13 +17,20 @@
 		max-width: 121px
 		display: flex
 		justify-content: space-between
-	&__wrapper
-		margin-bottom: 10px
 	&__pagination
-		margin-bottom: 28px
+		margin-bottom: 18px
 		text-align: center
-.swiper-pagination-bullet-active
-	background-color: #969696
+.swiper
+	&-scrollbar
+		margin-bottom: 10px
+		cursor: pointer
+		&-drag
+			position: static
+			background-color: #969696
+	&-pagination-fraction
+		font-size: 18px
+.swiper-container-horizontal .swiper-scrollbar
+	position: static
 .arrow
 	&-left, &-right
 		cursor: pointer
