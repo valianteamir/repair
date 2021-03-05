@@ -23,13 +23,57 @@ const mySwiper = new Swiper('.portfolio__slider', {
 	},
 	autoplay: {
 		delay: 3000,
+		stopOnLastSlide: false,
+		disableOnInteraction: true,
 	},
 	pagination: {
 		el: '.portfolio__pagination',
-		type: 'fraction',
+		clickable: true,
 	},
 	scrollbar: {
 		el: '.portfolio__scrollbar',
 		draggable: true,
+	},
+	touchAngle: 90,
+	slideToClickedSlide: true,
+	keyboard: {
+		enabled: true,
+		pageUpDown: false,
+	},
+	mousewheel: {
+	},
+	autoHeight: true,
+	watchOverflow: true,
+	spaceBetween: 0,
+	slidesPerGroup: 1,
+	centeredSlides: true,
+	initialSlide: 1,
+	slidesPerColumn: 1,
+	loop: false,
+	freeMode: true,
+	direction: 'horizontal',
+	// effect: 'fade',
+	// fadeEffect: {
+	// 	crossFade: true,
+	// },
+	// effect: 'flip',
+	// flipEffect: {
+	// 	slideShadows: false,
+	// 	limitRotation: true,
+	// },
+	// effect: 'cube',
+	// cubeEffect: {
+	// 	shadow: true,
+	// 	shadowOffset: 60,
+	// 	shadowScale: 0.4,
+	// 	slideShadows: 0,
+	// }
+	effect: 'coverflow',
+	coverflowEffect: {
+		slideShadows: false,
+		modifier: 1,
+		rotate: 80,
+		stretch: 0,
+		depth: 800,
 	},
 });
