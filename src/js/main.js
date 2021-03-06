@@ -14,7 +14,7 @@ closeBtn.addEventListener('click', function() {
 	modal.classList.remove('modal-bg_active');
 });
 
-const mySwiper = new Swiper('.portfolio__slider', {
+const sliderMain = new Swiper('.portfolio__slider', {
 	slidesPerView: 3,
 	speed: 500,
 	navigation: {
@@ -47,11 +47,11 @@ const mySwiper = new Swiper('.portfolio__slider', {
 	spaceBetween: 0,
 	slidesPerGroup: 1,
 	centeredSlides: true,
-	initialSlide: 1,
+	initialSlide: 0,
 	slidesPerColumn: 1,
 	loop: false,
 	freeMode: true,
-	direction: 'horizontal',
+	// direction: 'horizontal',
 	// effect: 'fade',
 	// fadeEffect: {
 	// 	crossFade: true,
@@ -76,4 +76,30 @@ const mySwiper = new Swiper('.portfolio__slider', {
 		stretch: 0,
 		depth: 800,
 	},
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+		},
+		670: {
+			slidesPerView: 2,
+		},
+		992: {
+			slidesPerView: 3,
+		}
+	},
+	// preloadImages: false,
+	// lazy: true,
+	zoom: {
+		maxRatio: 3,
+		minRatio: 1,
+	},
+	// thumbs: {
+	// 	swiper: {
+	// 		el: '.image-mini-slider',
+	// 	slidesPerView: 5,
+	// 	}
+	// },
 });
+
+// sliderMain.controller.control = textSlider;
+// textSlider.controller.control = sliderMain;
