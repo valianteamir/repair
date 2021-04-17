@@ -152,6 +152,8 @@ img {
 .hero {
   padding: 50px 0;
   background-color: #f5f5f5;
+  -webkit-animation: fadeInUp;
+          animation: fadeInUp;
 }
 
 .hero-block {
@@ -171,12 +173,16 @@ img {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding-right: 100px;
+  -webkit-animation: fadeInLeft;
+          animation: fadeInLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .hero-text__title {
   margin-top: 35px;
   margin-bottom: 50px;
-  font-size: 41px;
+  font-size: 40px;
   line-height: 48px;
   color: #333333;
   text-align: center;
@@ -195,6 +201,11 @@ img {
   font-family: "MuseoSans Bold", sans-serif;
   font-weight: 700;
   text-align: left;
+}
+
+.hero__image {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .hero-list__item {
@@ -249,6 +260,8 @@ img {
   }
   .hero-text {
     padding-right: 0;
+    -webkit-animation: none;
+            animation: none;
   }
   .hero-text__title {
     margin-top: 0;
@@ -599,6 +612,7 @@ img {
   transition: -webkit-box-shadow 0.5s ease;
   transition: box-shadow 0.5s ease;
   transition: box-shadow 0.5s ease, -webkit-box-shadow 0.5s ease;
+  display: none;
 }
 
 .card:hover {
@@ -610,6 +624,36 @@ img {
   -webkit-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
   opacity: 1;
+}
+
+.card:nth-child(1) {
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+}
+
+.card:nth-child(2) {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.card:nth-child(3) {
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+}
+
+.card:nth-child(4) {
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
+}
+
+.card:nth-child(5) {
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
+}
+
+.card:nth-child(6) {
+  -webkit-animation-duration: 1.8s;
+          animation-duration: 1.8s;
 }
 
 .card__image {
