@@ -119,7 +119,7 @@ window.addEventListener('scroll', function () {
 	let scrollTop = window.pageYOffset;
 	let windowWidth = document.documentElement.clientWidth;
 
-	if (windowWidth > 1200) {
+	if (windowWidth > 1201) {
 			if (scrollTop >= 1370) {
 		cardsHalfFirst.forEach(function (item) {
 			item.style.display = 'block';
@@ -133,7 +133,15 @@ window.addEventListener('scroll', function () {
 		});
 	}
 	}
-	if (windowWidth < 1200 && windowWidth > 992) {
+	if (windowWidth < 1201) {
+		cardsHalfFirst.forEach(function (item) {
+			item.style.display = 'block';
+		});
+		cardsHalfSecond.forEach(function (item) {
+			item.style.display = 'block';
+		});
+	}
+/* 	if (windowWidth < 1201 && windowWidth > 993) {
 		if (scrollTop >= 2109) {
 			cardsThirdFirst.forEach(function (item) {
 				item.style.display = 'block';
@@ -155,9 +163,80 @@ window.addEventListener('scroll', function () {
 				item.classList.add('animate__animated', 'animate__fadeInUp');
 			});
 	}
-	} else if (windowWidth < 992 && windowWidth > 768) {
-		
-	} else if (windowWidth < 768 && windowWidth > 576) {
-		
-	}
+	} else if (windowWidth < 993 && windowWidth > 769) {
+
+		if (scrollTop >= 2371) {
+			cardsThirdFirst.forEach(function (item) {
+				item.style.display = 'block';
+				item.style.animationDuration = '1s';
+				item.classList.add('animate__animated', 'animate__fadeInUp');
+			});
+		}
+		if (scrollTop >= 2866) {
+			cardsThirdSecond.forEach(function (item) {
+				item.style.display = 'block';
+				item.style.animationDuration = '1s';
+				item.classList.add('animate__animated', 'animate__fadeInUp');
+			});
+		} if (scrollTop >= 3361) {
+			cardsThirdSquared.forEach(function (item) {
+				item.style.display = 'block';
+				item.style.animationDuration = '1s';
+				item.classList.add('animate__animated', 'animate__fadeInUp');
+			});
+		}
+	} else if (windowWidth < 769 && windowWidth > 577) {
+		if (scrollTop >= 2198) {
+			cardsThirdFirst.forEach(function (item) {
+				item.style.display = 'block';
+				item.style.animationDuration = '1s';
+				item.classList.add('animate__animated', 'animate__fadeInUp');
+			});
+		}
+			if (scrollTop >= 2635) {
+				cardsThirdSecond.forEach(function (item) {
+					item.style.display = 'block';
+					item.style.animationDuration = '1s';
+					item.classList.add('animate__animated', 'animate__fadeInUp');
+				});
+			}
+			if (scrollTop >= 3052) {
+				cardsThirdSquared.forEach(function (item) {
+					item.style.display = 'block';
+					item.style.animationDuration = '1s';
+					item.classList.add('animate__animated', 'animate__fadeInUp');
+				});
+			}
+	} else if (windowWidth < 577) {
+		if (scrollTop >= 2304) {
+			card1.style.display = 'block';
+			card1.style.animationDuration = '1s';
+			card1.classList.add('animate__animated', 'animate__fadeInUp');
+		}
+		if (scrollTop >= 2857) {
+			card2.style.display = 'block';
+			card2.style.animationDuration = '1s';
+			card2.classList.add('animate__animated', 'animate__fadeInUp');
+		}
+		if (scrollTop >= 3410) {
+			card3.style.display = 'block';
+			card3.style.animationDuration = '1s';
+			card3.classList.add('animate__animated', 'animate__fadeInUp');
+		}
+		if (scrollTop >= 3963) {
+			card4.style.display = 'block';
+			card4.style.animationDuration = '1s';
+			card4.classList.add('animate__animated', 'animate__fadeInUp');
+		}
+		if (scrollTop >= 4516) {
+			card5.style.display = 'block';
+			card5.style.animationDuration = '1s';
+			card5.classList.add('animate__animated', 'animate__fadeInUp');
+		}
+		if (scrollTop >= 5069) {
+			card6.style.display = 'block';
+			card6.style.animationDuration = '1s';
+			card6.classList.add('animate__animated', 'animate__fadeInUp');
+		}
+	} */
 });
