@@ -790,4 +790,6 @@ img {
   visibility: visible;
   opacity: 1;
 }
+
+body { overflow-x: hidden; }
 /*# sourceMappingURL=style.css.map */
